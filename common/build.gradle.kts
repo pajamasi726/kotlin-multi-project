@@ -35,3 +35,10 @@ tasks.withType<KotlinCompile> {
         jvmTarget = "1.8"
     }
 }
+
+tasks.withType<BootJar> {
+    enabled = false
+}
+tasks.withType<Jar> {
+    enabled = true
+}
